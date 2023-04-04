@@ -1,0 +1,317 @@
+// Configuration options
+{
+    "device_type":"BrinkUWA1Test5",
+        "device":{
+            "name":"Brink UWA1 Test5",
+            "id":"BrinkUWA1Test5",
+            "enabled": true,
+            "max_read_registers": 1,
+            "max_reg_hole": 0,
+            "guard_interval_us": 10000,
+			"channels": [
+                {
+                  "name": "Appliance Type",
+                  "id": "ApplianceType",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4001,
+                  "format": "u16",
+                  "readonly": true
+                },
+		{
+		  "name": "Appliance Version",
+		  "id": "ApplianceVersion",
+		  "type": "value",
+		  "reg_type": "holding",
+		  "address": 4003,
+		  "format": "u16",
+		  "readonly": true
+		},
+                {
+                  "name": "Current temperature from outdoor sensor",
+                  "id": "OutdoorTemperature",
+                  "type": "temperature",
+                  "reg_type": "holding",
+                  "address": 4008,
+                  "format": "s16",
+                  "scale": 0.1,
+                  "readonly": true
+                },
+                {
+                  "name": "Current Temperature from dwelling",
+                  "id": "DwellingTemperature",
+                  "type": "temperature",
+                  "reg_type": "holding",
+                  "address": 4009,
+                  "format": "s16",
+                  "scale": 0.1,
+                  "readonly": true
+                },
+                {
+                  "name": "Current supply pressure, Pa",
+                  "id": "CurrentSupplyPressure",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4010,
+                  "format": "u16",
+                  "scale": 1,
+                  "readonly": true
+                },
+                {
+                  "name": "Current exhaust pressure, Pa",
+                  "id": "CurrentExhaustPressure",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4011,
+                  "format": "u16",
+                  "scale": 1,
+                  "readonly": true
+                },
+                {
+                  "name": "Preset air flow rate",
+                  "id": "PresetAirFlowRate",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4012,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Imbalance permissible",
+                  "id": "ImbalancePermissible",
+                  "type": "switch",
+                  "reg_type": "holding",
+                  "address": 4015,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Preset imbalance, m3/h",
+                  "id": "PresetImbalance",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4021,
+                  "format": "s16",
+                  "readonly": true
+                },
+                {
+                  "name": "Current supply flowrate",
+                  "id": "CurrentSupplyFlowrate",
+                  "type": "water_flow",
+                  "reg_type": "holding",
+                  "address": 4027,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Current exhaust flowrate",
+                  "id": "CurrentExhaustFlowrate",
+                  "type": "water_flow",
+                  "reg_type": "holding",
+                  "address": 4028,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Bypass valve position (0:init,1:open,2:close,3:opened,4:closed)",
+                  "id": "BypassStatus",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4029,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Bypass mode (0:Auto,1:Closed,2:Open)",
+                  "id": "BypassMode",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4030,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Preheater status (0:init,1:inactive,2:active,3:test mode)",
+                  "id": "PreheaterStatus",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4036,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Preheater power, %",
+                  "id": "PreheaterPower",
+                  "type": "range",
+                  "reg_type": "holding",
+                  "address": 4037,
+                  "format": "u16",
+                  "max": 100,
+                  "readonly": true
+                },
+                {
+                  "name": "Current fault code",
+                  "id": "CurrentFaultCode",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4038,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Error message (0:filter clean, 1:filter fouled)",
+                  "id": "ErrorMessage",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4039,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Geo heat exchanger mode",
+                  "id": "GeoHeatExchangerMode",
+                  "type": "switch",
+                  "reg_type": "holding",
+                  "address": 4040,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Geo heat exchanger min temp",
+                  "id": "GeoHeatExchangerMinTemp",
+                  "type": "temperature",
+                  "reg_type": "holding",
+                  "address": 4046,
+                  "format": "s16",
+                  "scale": 0.1,
+                  "readonly": true
+                },
+                {
+                  "name": "Geo heat exchanger max temp",
+                  "id": "GeoHeatExchangerMaxTemp",
+                  "type": "temperature",
+                  "reg_type": "holding",
+                  "address": 4052,
+                  "format": "s16",
+                  "scale": 0.1,
+                  "readonly": true
+                },
+                {
+                  "name": "Nr. selected CO2 sensor",
+                  "id": "SelectedCO2Sensor",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4058,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Value selected CO2 sensor, PPM",
+                  "id": "ValueSelectedCO2Sensor",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 4059,
+                  "format": "u16",
+                  "readonly": true
+                },
+                {
+                  "name": "Modbus Slave Address",
+                  "id": "ModbusSlaveAddress",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 999,
+                  "format": "u8"
+                },
+                {
+                  "name": "Value flow rate",
+                  "id": "ValueFlowRate",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 6000,
+                  "format": "u16"
+                },
+                {
+                  "name": "Imbalance permissible set",
+                  "id": "ImbalancePermissibleSet",
+                  "type": "wo-switch",
+                  "reg_type": "holding",
+                  "address": 6003,
+                  "format": "u16"
+                },
+                {
+                  "name": "Preset imbalance set, m3/h",
+                  "id": "PresetImbalanceSet",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 6004,
+                  "format": "s16"
+                },
+                {
+                  "name": "Operation bypass valve (0:Auto,1:Closed,2:Open)",
+                  "id": "OperationBypassValve",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 6005,
+                  "format": "u16"
+                },
+                {
+                  "name": "Filter reset",
+                  "id": "FilterReset",
+                  "type": "wo-switch",
+                  "reg_type": "holding",
+                  "address": 6006,
+                  "format": "u16"
+                },
+                {
+                  "name": "Geo heat exchanger set",
+                  "id": "GeoHeatExchangerSet",
+                  "type": "switch",
+                  "reg_type": "holding",
+                  "address": 6007,
+                  "format": "u16"
+                },
+                {
+                  "name": "Geo heat exchanger min temp set",
+                  "id": "GeoHeatExchangerMinTempSet",
+                  "type": "temperature",
+                  "reg_type": "holding",
+                  "address": 6008,
+                  "format": "s16",
+                  "scale": 0.1
+                },
+                {
+                  "name": "Geo heat exchanger max temp set",
+                  "id": "GeoHeatExchangerMaxTempSet",
+                  "type": "temperature",
+                  "reg_type": "holding",
+                  "address": 6009,
+                  "format": "s16",
+                  "scale": 0.1
+                },
+                {
+                  "name": "Nr. selected CO2 sensor set",
+                  "id": "SelectedCO2SensorSet",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 6010,
+                  "format": "u16"
+                },
+                {
+                  "name": "Reset Brink appliance",
+                  "id": "ResetBrinkAppliance",
+                  "type": "pushbutton",
+                  "reg_type": "holding",
+                  "address": 6011,
+                  "format": "u16"
+                },
+                {
+                  "name": "Set control mode (0:Brink,4:Modbus)",
+                  "id": "SetControlMode",
+                  "type": "value",
+                  "reg_type": "holding",
+                  "address": 6012,
+                  "format": "u16"
+                }
+            ]
+		}
+}

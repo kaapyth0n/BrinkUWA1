@@ -1,0 +1,6454 @@
+[
+	{
+		"id": "1d84ff89.725df",
+		"type": "tab",
+		"label": "brink-connect",
+		"disabled": false,
+		"info": ""
+	},
+	{
+		"id": "af6ae872.30e0a8",
+		"type": "tab",
+		"label": " wb-msw 1",
+		"disabled": false,
+		"info": ""
+	},
+	{
+		"id": "af639d52.140f4",
+		"type": "wirenboard-server",
+		"name": "",
+		"host": "localhost",
+		"mqtt_port": "1883",
+		"mqtt_username": "",
+		"mqtt_password": ""
+	},
+	{
+		"id": "86f8d49f.e99c48",
+		"type": "ui_base",
+		"theme": {
+			"name": "theme-light",
+			"lightTheme": {
+				"default": "#0094CE",
+				"baseColor": "#0094CE",
+				"baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+				"edited": true,
+				"reset": false
+			},
+			"darkTheme": {
+				"default": "#097479",
+				"baseColor": "#097479",
+				"baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+				"edited": false
+			},
+			"customTheme": {
+				"name": "Untitled Theme 1",
+				"default": "#4B7930",
+				"baseColor": "#4B7930",
+				"baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+			},
+			"themeState": {
+				"base-color": {
+					"default": "#0094CE",
+					"value": "#0094CE",
+					"edited": false
+				},
+				"page-titlebar-backgroundColor": {
+					"value": "#0094CE",
+					"edited": false
+				},
+				"page-backgroundColor": {
+					"value": "#fafafa",
+					"edited": false
+				},
+				"page-sidebar-backgroundColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"group-textColor": {
+					"value": "#1bbfff",
+					"edited": false
+				},
+				"group-borderColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"group-backgroundColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"widget-textColor": {
+					"value": "#111111",
+					"edited": false
+				},
+				"widget-backgroundColor": {
+					"value": "#0094ce",
+					"edited": false
+				},
+				"widget-borderColor": {
+					"value": "#ffffff",
+					"edited": false
+				},
+				"base-font": {
+					"value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+				}
+			},
+			"angularTheme": {
+				"primary": "indigo",
+				"accents": "blue",
+				"warn": "red",
+				"background": "grey",
+				"palette": "light"
+			}
+		},
+		"site": {
+			"name": "Node-RED Dashboard",
+			"hideToolbar": "false",
+			"allowSwipe": "false",
+			"lockMenu": "false",
+			"allowTempTheme": "true",
+			"dateFormat": "DD/MM/YYYY",
+			"sizes": {
+				"sx": 48,
+				"sy": 48,
+				"gx": 6,
+				"gy": 6,
+				"cx": 6,
+				"cy": 6,
+				"px": 0,
+				"py": 0
+			}
+		}
+	},
+	{
+		"id": "d139c1a2.37fa7",
+		"type": "ui_tab",
+		"name": "Вентустановка 1",
+		"icon": "dashboard",
+		"order": 1,
+		"disabled": false,
+		"hidden": false
+	},
+	{
+		"id": "49d4ac3c.e150f4",
+		"type": "ui_group",
+		"name": "Расход",
+		"tab": "d139c1a2.37fa7",
+		"order": 2,
+		"disp": true,
+		"width": "6",
+		"collapse": false,
+		"className": ""
+	},
+	{
+		"id": "5e2a4fa4.dab17",
+		"type": "ui_group",
+		"name": "Температура",
+		"tab": "d139c1a2.37fa7",
+		"order": 3,
+		"disp": true,
+		"width": "6",
+		"collapse": false,
+		"className": ""
+	},
+	{
+		"id": "97c53d99.6936d",
+		"type": "ui_group",
+		"name": "Управление",
+		"tab": "d139c1a2.37fa7",
+		"order": 1,
+		"disp": true,
+		"width": "6",
+		"collapse": false,
+		"className": ""
+	},
+	{
+		"id": "240c9df0.4362f2",
+		"type": "ui_group",
+		"name": "Давление",
+		"tab": "d139c1a2.37fa7",
+		"order": 5,
+		"disp": true,
+		"width": "6",
+		"collapse": false,
+		"className": ""
+	},
+	{
+		"id": "80dd053e.f7f4b8",
+		"type": "remote-config",
+		"name": "Blizzard Lufttechnik",
+		"host": "localhost",
+		"protocol": "http",
+		"port": "1880",
+		"baseurl": "/ui",
+		"instancehash": "jikhryawzpn3rouf12o2r37a38qtr7g9uqxp3v6kr3k3mbdt6v8qemwuwkh533si",
+		"server": "nodered02.remote-red.com",
+		"region": "de"
+	},
+	{
+		"id": "7c1c7f37.1abdd",
+		"type": "ui_group",
+		"name": "Комнатный датчик",
+		"tab": "dd50cea0.d7683",
+		"order": 4,
+		"disp": false,
+		"width": "6",
+		"collapse": false,
+		"className": ""
+	},
+	{
+		"id": "dd50cea0.d7683",
+		"type": "ui_tab",
+		"name": "Комнатный датчик 1",
+		"icon": "dashboard",
+		"order": 2,
+		"disabled": false,
+		"hidden": false
+	},
+	{
+		"id": "51de116c.bb01",
+		"type": "homekit-bridge",
+		"bridgeName": "BlizzConnect",
+		"pinCode": "022-11-911",
+		"port": "",
+		"advertiser": "bonjour-hap",
+		"allowInsecureRequest": true,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "BlizzConnect",
+		"serialNo": "AF7THKZV",
+		"firmwareRev": "1",
+		"hardwareRev": "1",
+		"softwareRev": "1",
+		"customMdnsConfig": false,
+		"mdnsMulticast": true,
+		"mdnsInterface": "",
+		"mdnsPort": "",
+		"mdnsIp": "",
+		"mdnsTtl": "",
+		"mdnsLoopback": true,
+		"mdnsReuseAddr": true,
+		"allowMessagePassthrough": false
+	},
+	{
+		"id": "b604e1a9.d8cd4",
+		"type": "ui_chart",
+		"z": "1d84ff89.725df",
+		"name": "Расход",
+		"group": "49d4ac3c.e150f4",
+		"order": 1,
+		"width": 0,
+		"height": 0,
+		"label": "",
+		"chartType": "line",
+		"legend": "false",
+		"xformat": "HH:mm:ss",
+		"interpolate": "linear",
+		"nodata": "",
+		"dot": false,
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "86400",
+		"cutout": 0,
+		"useOneColor": false,
+		"useUTC": false,
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"outputs": 1,
+		"useDifferentColor": false,
+		"className": "",
+		"x": 1000,
+		"y": 20,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "8dbf0caa.04dc8",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "Расход подачи",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/CurrentSupplyFlowrate"
+		],
+		"outputAtStartup": true,
+		"x": 120,
+		"y": 80,
+		"wires": [
+			[
+				"922370cb.8ea27",
+				"309995f8.57f8da"
+			]
+		]
+	},
+	{
+		"id": "f423bd0f.38193",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "Расход вытяжки",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/CurrentExhaustFlowrate"
+		],
+		"outputAtStartup": true,
+		"x": 120,
+		"y": 140,
+		"wires": [
+			[
+				"66fc5513.3c353c",
+				"bfe719b.2c498e8"
+			]
+		]
+	},
+	{
+		"id": "fc9bf38d.cab2c",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "Температура внутри",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/DwellingTemperature"
+		],
+		"outputAtStartup": true,
+		"x": 140,
+		"y": 300,
+		"wires": [
+			[
+				"361c6373.7d925c",
+				"f918c8aa.907958"
+			]
+		]
+	},
+	{
+		"id": "611ca832.96a0d8",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "Температура снаружи",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/OutdoorTemperature"
+		],
+		"outputAtStartup": true,
+		"x": 140,
+		"y": 360,
+		"wires": [
+			[
+				"999ddad7.32e5a8",
+				"91604cfd.64f44"
+			]
+		]
+	},
+	{
+		"id": "20ad968d.050fea",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/BypassStatus"
+		],
+		"outputAtStartup": true,
+		"x": 160,
+		"y": 720,
+		"wires": [
+			[
+				"9b5fc55a.cf9328"
+			]
+		]
+	},
+	{
+		"id": "438bcac6.f68404",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/BypassMode"
+		],
+		"outputAtStartup": true,
+		"x": 160,
+		"y": 580,
+		"wires": [
+			[
+				"2a071325.47824c"
+			]
+		]
+	},
+	{
+		"id": "a2747912.cc0ca8",
+		"type": "wirenboard-out",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/OperationBypassValve"
+		],
+		"command": "/on",
+		"commandType": "wb_cmd",
+		"payload": "payload",
+		"payloadType": "msg",
+		"rbe": false,
+		"x": 710,
+		"y": 580,
+		"wires": []
+	},
+	{
+		"id": "5730e705.e3fd28",
+		"type": "wirenboard-out",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/SetControlMode"
+		],
+		"command": "/on",
+		"commandType": "wb_cmd",
+		"payload": "payload",
+		"payloadType": "msg",
+		"rbe": false,
+		"x": 1390,
+		"y": 1160,
+		"wires": []
+	},
+	{
+		"id": "d4861760.b297f8",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/PresetAirFlowRate"
+		],
+		"outputAtStartup": true,
+		"x": 170,
+		"y": 1800,
+		"wires": [
+			[
+				"41808afb.a31724"
+			]
+		]
+	},
+	{
+		"id": "c5cb5c62.c6eee",
+		"type": "wirenboard-out",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/ValueFlowRate"
+		],
+		"command": "/on",
+		"commandType": "wb_cmd",
+		"payload": "payload",
+		"payloadType": "msg",
+		"rbe": false,
+		"x": 1390,
+		"y": 1220,
+		"wires": []
+	},
+	{
+		"id": "3a4ce1f0.57a2fe",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"order": 7,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Байпас",
+		"format": "{{msg.payload}}",
+		"layout": "row-left",
+		"className": "",
+		"x": 940,
+		"y": 720,
+		"wires": []
+	},
+	{
+		"id": "2a071325.47824c",
+		"type": "ui_dropdown",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "Режим байпаса",
+		"tooltip": "",
+		"place": "Select option",
+		"group": "97c53d99.6936d",
+		"order": 8,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"multiple": false,
+		"options": [
+			{
+				"label": "Авто",
+				"value": "0",
+				"type": "str"
+			},
+			{
+				"label": "Закрыт",
+				"value": "1",
+				"type": "str"
+			},
+			{
+				"label": "Открыт",
+				"value": "2",
+				"type": "str"
+			}
+		],
+		"payload": "",
+		"topic": "topic",
+		"topicType": "msg",
+		"className": "",
+		"x": 420,
+		"y": 580,
+		"wires": [
+			[
+				"a2747912.cc0ca8"
+			]
+		]
+	},
+	{
+		"id": "9b5fc55a.cf9328",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "1",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "2",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "3",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "4",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "255",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 6,
+		"x": 450,
+		"y": 720,
+		"wires": [
+			[
+				"bcb6be45.24fed"
+			],
+			[
+				"b1140dfd.a315a"
+			],
+			[
+				"33fa0878.634b28"
+			],
+			[
+				"9b1328f4.732378"
+			],
+			[
+				"6fd0469a.e19308"
+			],
+			[
+				"4921824d.997b3c"
+			]
+		]
+	},
+	{
+		"id": "bcb6be45.24fed",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "в исходном положении",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "в исходном положении",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 710,
+		"y": 620,
+		"wires": [
+			[
+				"3a4ce1f0.57a2fe"
+			]
+		]
+	},
+	{
+		"id": "b1140dfd.a315a",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "открывается",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "открывается",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 680,
+		"y": 660,
+		"wires": [
+			[
+				"3a4ce1f0.57a2fe"
+			]
+		]
+	},
+	{
+		"id": "33fa0878.634b28",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "закрывается",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "закрывается",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 680,
+		"y": 700,
+		"wires": [
+			[
+				"3a4ce1f0.57a2fe"
+			]
+		]
+	},
+	{
+		"id": "9b1328f4.732378",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "открыт",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "открыт",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 660,
+		"y": 740,
+		"wires": [
+			[
+				"3a4ce1f0.57a2fe"
+			]
+		]
+	},
+	{
+		"id": "6fd0469a.e19308",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "закрыт",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "закрыт",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 660,
+		"y": 780,
+		"wires": [
+			[
+				"3a4ce1f0.57a2fe"
+			]
+		]
+	},
+	{
+		"id": "4921824d.997b3c",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "в неизвестном положении",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "в неизвестном положении",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 720,
+		"y": 820,
+		"wires": [
+			[
+				"3a4ce1f0.57a2fe"
+			]
+		]
+	},
+	{
+		"id": "1c34430a.c6019d",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/ErrorMessage"
+		],
+		"outputAtStartup": true,
+		"x": 160,
+		"y": 1880,
+		"wires": [
+			[
+				"21ed92a6.06813e",
+				"a79109e0c7ac6cbc",
+				"cde7e8563bf55e42"
+			]
+		]
+	},
+	{
+		"id": "21ed92a6.06813e",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "1",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 430,
+		"y": 1880,
+		"wires": [
+			[
+				"8fc747db.01f1f8"
+			],
+			[
+				"19403e0.5c7ccc2"
+			]
+		]
+	},
+	{
+		"id": "8fc747db.01f1f8",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "чистый",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "чистый",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 600,
+		"y": 1880,
+		"wires": [
+			[
+				"594f75d9.a1d34c"
+			]
+		]
+	},
+	{
+		"id": "19403e0.5c7ccc2",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "требует замены!",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "требует замены!",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 630,
+		"y": 1920,
+		"wires": [
+			[
+				"594f75d9.a1d34c",
+				"efbdaf9f.0ed74"
+			]
+		]
+	},
+	{
+		"id": "594f75d9.a1d34c",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"order": 9,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Фильтр",
+		"format": "{{msg.payload}}",
+		"layout": "row-left",
+		"className": "",
+		"x": 880,
+		"y": 1880,
+		"wires": []
+	},
+	{
+		"id": "ae0adef6.1d8a5",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/CurrentFaultCode"
+		],
+		"outputAtStartup": true,
+		"x": 170,
+		"y": 2060,
+		"wires": [
+			[
+				"6ef6977.fa38268"
+			]
+		]
+	},
+	{
+		"id": "6ef6977.fa38268",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"order": 11,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Код ошибки",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 450,
+		"y": 2060,
+		"wires": []
+	},
+	{
+		"id": "31e707c3.7ba1b8",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/ImbalancePermissible"
+		],
+		"outputAtStartup": true,
+		"x": 180,
+		"y": 2140,
+		"wires": [
+			[
+				"a2b6a2e.1f2ee6",
+				"9b94ea8ac59a483e"
+			]
+		]
+	},
+	{
+		"id": "d666e9c1.4d9718",
+		"type": "wirenboard-out",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/ImbalancePermissibleSet"
+		],
+		"command": "/on",
+		"commandType": "wb_cmd",
+		"payload": "payload",
+		"payloadType": "msg",
+		"rbe": false,
+		"x": 840,
+		"y": 2140,
+		"wires": []
+	},
+	{
+		"id": "fa64dd68.8f184",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/PresetImbalance"
+		],
+		"outputAtStartup": true,
+		"x": 170,
+		"y": 2200,
+		"wires": [
+			[
+				"11d62093.b8cf7f"
+			]
+		]
+	},
+	{
+		"id": "11d62093.b8cf7f",
+		"type": "ui_slider",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "Треб. дисбаланс",
+		"tooltip": "",
+		"group": "97c53d99.6936d",
+		"order": 13,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"outs": "end",
+		"topic": "topic",
+		"topicType": "msg",
+		"min": "-100",
+		"max": "100",
+		"step": 1,
+		"className": "",
+		"x": 490,
+		"y": 2200,
+		"wires": [
+			[
+				"419dff73.ef941"
+			]
+		]
+	},
+	{
+		"id": "419dff73.ef941",
+		"type": "wirenboard-out",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/PresetImbalanceSet"
+		],
+		"command": "/on",
+		"commandType": "wb_cmd",
+		"payload": "payload",
+		"payloadType": "msg",
+		"rbe": false,
+		"x": 830,
+		"y": 2200,
+		"wires": []
+	},
+	{
+		"id": "a2b6a2e.1f2ee6",
+		"type": "ui_switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "Допустить дисбаланс",
+		"tooltip": "",
+		"group": "97c53d99.6936d",
+		"order": 12,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"decouple": "false",
+		"topic": "topic",
+		"topicType": "msg",
+		"style": "",
+		"onvalue": "1",
+		"onvalueType": "str",
+		"onicon": "",
+		"oncolor": "",
+		"offvalue": "0",
+		"offvalueType": "str",
+		"officon": "",
+		"offcolor": "",
+		"animate": false,
+		"className": "",
+		"x": 500,
+		"y": 2140,
+		"wires": [
+			[
+				"d666e9c1.4d9718"
+			]
+		]
+	},
+	{
+		"id": "9c7e7edd.59de2",
+		"type": "ui_chart",
+		"z": "1d84ff89.725df",
+		"name": "Температура",
+		"group": "5e2a4fa4.dab17",
+		"order": 1,
+		"width": 0,
+		"height": 0,
+		"label": "",
+		"chartType": "line",
+		"legend": "false",
+		"xformat": "HH:mm:ss",
+		"interpolate": "linear",
+		"nodata": "",
+		"dot": false,
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "86400",
+		"cutout": 0,
+		"useOneColor": false,
+		"useUTC": false,
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"outputs": 1,
+		"useDifferentColor": false,
+		"className": "",
+		"x": 1020,
+		"y": 240,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "361c6373.7d925c",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "5e2a4fa4.dab17",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Температура внутри",
+		"format": "{{msg.payload}} °C",
+		"layout": "row-spread",
+		"className": "",
+		"x": 1040,
+		"y": 300,
+		"wires": []
+	},
+	{
+		"id": "999ddad7.32e5a8",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "5e2a4fa4.dab17",
+		"order": 3,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Температура снаружи",
+		"format": "{{msg.payload}} °C",
+		"layout": "row-spread",
+		"className": "",
+		"x": 1050,
+		"y": 360,
+		"wires": []
+	},
+	{
+		"id": "309995f8.57f8da",
+		"type": "ui_gauge",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"group": "49d4ac3c.e150f4",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"gtype": "gage",
+		"title": "Расход подачи",
+		"label": "м³/ч",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "400",
+		"colors": [
+			"#00b500",
+			"#e6e600",
+			"#ca3838"
+		],
+		"seg1": "",
+		"seg2": "",
+		"className": "",
+		"x": 1020,
+		"y": 80,
+		"wires": []
+	},
+	{
+		"id": "bfe719b.2c498e8",
+		"type": "ui_gauge",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"group": "49d4ac3c.e150f4",
+		"order": 3,
+		"width": 0,
+		"height": 0,
+		"gtype": "gage",
+		"title": "Расход вытяжки",
+		"label": "м³/ч",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "400",
+		"colors": [
+			"#00b500",
+			"#e6e600",
+			"#ca3838"
+		],
+		"seg1": "",
+		"seg2": "",
+		"className": "",
+		"x": 1030,
+		"y": 140,
+		"wires": []
+	},
+	{
+		"id": "922370cb.8ea27",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Расход подачи",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 360,
+		"y": 40,
+		"wires": [
+			[
+				"e8b3b4f2.7bc1b8"
+			]
+		]
+	},
+	{
+		"id": "66fc5513.3c353c",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Расход вытяжки",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 360,
+		"y": 100,
+		"wires": [
+			[
+				"914387d9.f81e98"
+			]
+		]
+	},
+	{
+		"id": "f918c8aa.907958",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Температура внутри",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 380,
+		"y": 260,
+		"wires": [
+			[
+				"ee36bc9d.43872"
+			]
+		]
+	},
+	{
+		"id": "91604cfd.64f44",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Температура снаружи",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 380,
+		"y": 320,
+		"wires": [
+			[
+				"d7ca5f45.d5abb"
+			]
+		]
+	},
+	{
+		"id": "14e467c5.993a08",
+		"type": "ui_chart",
+		"z": "1d84ff89.725df",
+		"name": "Давление",
+		"group": "240c9df0.4362f2",
+		"order": 1,
+		"width": 0,
+		"height": 0,
+		"label": "",
+		"chartType": "line",
+		"legend": "false",
+		"xformat": "HH:mm:ss",
+		"interpolate": "linear",
+		"nodata": "",
+		"dot": false,
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "86400",
+		"cutout": 0,
+		"useOneColor": false,
+		"useUTC": false,
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"outputs": 1,
+		"useDifferentColor": false,
+		"className": "",
+		"x": 1010,
+		"y": 400,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "5c98f5eb.94bf8c",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "Давление подачи",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/CurrentSupplyPressure"
+		],
+		"outputAtStartup": true,
+		"x": 130,
+		"y": 460,
+		"wires": [
+			[
+				"e51e9ded.6ab8e",
+				"2dfde737.092ea8"
+			]
+		]
+	},
+	{
+		"id": "4f218a0f.6b5684",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "Давление вытяжки",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/CurrentExhaustPressure"
+		],
+		"outputAtStartup": true,
+		"x": 130,
+		"y": 520,
+		"wires": [
+			[
+				"53f8b7f4.3bf1a8",
+				"d983834f.34558"
+			]
+		]
+	},
+	{
+		"id": "e51e9ded.6ab8e",
+		"type": "ui_gauge",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"group": "240c9df0.4362f2",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"gtype": "gage",
+		"title": "Давление подачи",
+		"label": "Па",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "800",
+		"colors": [
+			"#00b500",
+			"#e6e600",
+			"#ca3838"
+		],
+		"seg1": "",
+		"seg2": "",
+		"className": "",
+		"x": 1030,
+		"y": 460,
+		"wires": []
+	},
+	{
+		"id": "53f8b7f4.3bf1a8",
+		"type": "ui_gauge",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"group": "240c9df0.4362f2",
+		"order": 3,
+		"width": 0,
+		"height": 0,
+		"gtype": "gage",
+		"title": "Давление вытяжки",
+		"label": "Па",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "800",
+		"colors": [
+			"#00b500",
+			"#e6e600",
+			"#ca3838"
+		],
+		"seg1": "",
+		"seg2": "",
+		"className": "",
+		"x": 1040,
+		"y": 520,
+		"wires": []
+	},
+	{
+		"id": "2dfde737.092ea8",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Давление подачи",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 360,
+		"y": 420,
+		"wires": [
+			[
+				"36834cff.5d9584"
+			]
+		]
+	},
+	{
+		"id": "d983834f.34558",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Давление вытяжки",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 360,
+		"y": 480,
+		"wires": [
+			[
+				"4fb5f9e1.eae738"
+			]
+		]
+	},
+	{
+		"id": "c9eef32b.fd6b2",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/ApplianceType"
+		],
+		"outputAtStartup": true,
+		"x": 160,
+		"y": 2280,
+		"wires": [
+			[
+				"7e463029.419ad"
+			]
+		]
+	},
+	{
+		"id": "7e463029.419ad",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"order": 14,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Тип устройства",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 460,
+		"y": 2280,
+		"wires": []
+	},
+	{
+		"id": "14dac9.fe159537",
+		"type": "wirenboard-in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/ApplianceVersion"
+		],
+		"outputAtStartup": true,
+		"x": 170,
+		"y": 2340,
+		"wires": [
+			[
+				"501fa174.3da18"
+			]
+		]
+	},
+	{
+		"id": "501fa174.3da18",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"order": 15,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Версия устройства",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 480,
+		"y": 2340,
+		"wires": []
+	},
+	{
+		"id": "43d722a6.88a29c",
+		"type": "ui_button",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"group": "97c53d99.6936d",
+		"order": 10,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"label": "Сброс ошибки фильтра",
+		"tooltip": "",
+		"color": "",
+		"bgcolor": "",
+		"className": "",
+		"icon": "",
+		"payload": "1",
+		"payloadType": "str",
+		"topic": "topic",
+		"topicType": "msg",
+		"x": 130,
+		"y": 1980,
+		"wires": [
+			[
+				"56d614ec.43d30c",
+				"f1161f16.4d1e6"
+			]
+		]
+	},
+	{
+		"id": "56d614ec.43d30c",
+		"type": "wirenboard-out",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/BrinkUWA1Test5_11/controls/FilterReset"
+		],
+		"command": "/on",
+		"commandType": "wb_cmd",
+		"payload": "payload",
+		"payloadType": "msg",
+		"rbe": false,
+		"x": 450,
+		"y": 1960,
+		"wires": []
+	},
+	{
+		"id": "48adcbf5.854404",
+		"type": "remote-access",
+		"z": "1d84ff89.725df",
+		"confignode": "80dd053e.f7f4b8",
+		"name": "Remote access UI",
+		"verbose": 0,
+		"x": 120,
+		"y": 2440,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "efbdaf9f.0ed74",
+		"type": "remote-notification",
+		"z": "1d84ff89.725df",
+		"confignode": "80dd053e.f7f4b8",
+		"name": "Пора почистить фильтр!",
+		"notificationTitle": "Blizzard Lufttechnik",
+		"notificationTitleType": "str",
+		"notificationBody": "Пора почистить фильтр!",
+		"notificationBodyType": "str",
+		"notificationSound": "default",
+		"notificationSoundComputed": "payload.sound",
+		"notificationSoundComputedType": "msg",
+		"output": 1,
+		"x": 930,
+		"y": 1960,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "f1161f16.4d1e6",
+		"type": "remote-notification",
+		"z": "1d84ff89.725df",
+		"confignode": "80dd053e.f7f4b8",
+		"name": "Ошибка фильтра сброшена!",
+		"notificationTitle": "Blizzard Lufttechnik",
+		"notificationTitleType": "str",
+		"notificationBody": "Ошибка фильтра сброшена!",
+		"notificationBodyType": "str",
+		"notificationSound": "default",
+		"notificationSoundComputed": "payload.sound",
+		"notificationSoundComputedType": "msg",
+		"output": 1,
+		"x": 450,
+		"y": 2020,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "cd4c2e52.06824",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "rate",
+		"timeout": "5",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "5",
+		"rateUnits": "minute",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": true,
+		"outputs": 1,
+		"x": 770,
+		"y": 40,
+		"wires": [
+			[
+				"b604e1a9.d8cd4"
+			]
+		]
+	},
+	{
+		"id": "85ddef38.459a2",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "rate",
+		"timeout": "5",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "5",
+		"rateUnits": "minute",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": true,
+		"outputs": 1,
+		"x": 770,
+		"y": 100,
+		"wires": [
+			[
+				"b604e1a9.d8cd4"
+			]
+		]
+	},
+	{
+		"id": "6befeb7f.03cc24",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "rate",
+		"timeout": "5",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "5",
+		"rateUnits": "minute",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": true,
+		"outputs": 1,
+		"x": 790,
+		"y": 260,
+		"wires": [
+			[
+				"9c7e7edd.59de2"
+			]
+		]
+	},
+	{
+		"id": "5c3577d1.ebcaf8",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "rate",
+		"timeout": "5",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "5",
+		"rateUnits": "minute",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": true,
+		"outputs": 1,
+		"x": 790,
+		"y": 320,
+		"wires": [
+			[
+				"9c7e7edd.59de2"
+			]
+		]
+	},
+	{
+		"id": "e520e4c5.6c7678",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "rate",
+		"timeout": "5",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "5",
+		"rateUnits": "minute",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": true,
+		"outputs": 1,
+		"x": 770,
+		"y": 420,
+		"wires": [
+			[
+				"14e467c5.993a08"
+			]
+		]
+	},
+	{
+		"id": "806b3b7e.6d4bf8",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "rate",
+		"timeout": "5",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "5",
+		"rateUnits": "minute",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": true,
+		"outputs": 1,
+		"x": 770,
+		"y": 480,
+		"wires": [
+			[
+				"14e467c5.993a08"
+			]
+		]
+	},
+	{
+		"id": "dec834a4.768678",
+		"type": "ui_time_scheduler",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"name": "Расписание",
+		"startDay": "1",
+		"refresh": "30",
+		"devices": [
+			"Расписание"
+		],
+		"singleOff": false,
+		"onlySendChange": false,
+		"customPayload": false,
+		"eventMode": false,
+		"eventOptions": [],
+		"sendTopic": false,
+		"lat": "",
+		"lon": "",
+		"customContextStore": "",
+		"outputs": 2,
+		"order": 6,
+		"width": "6",
+		"height": "3",
+		"x": 110,
+		"y": 1220,
+		"wires": [
+			[],
+			[
+				"86507be8e949750f"
+			]
+		]
+	},
+	{
+		"id": "41b7e465.0656dc",
+		"type": "ui_dropdown",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "Режим",
+		"tooltip": "",
+		"place": "Выберите режим",
+		"group": "97c53d99.6936d",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"passthru": true,
+		"multiple": false,
+		"options": [
+			{
+				"label": "Комфорт",
+				"value": "0",
+				"type": "str"
+			},
+			{
+				"label": "Отсутствие",
+				"value": "1",
+				"type": "str"
+			},
+			{
+				"label": "Выключено",
+				"value": "2",
+				"type": "str"
+			},
+			{
+				"label": "Расписание",
+				"value": "3",
+				"type": "str"
+			},
+			{
+				"label": "Авто",
+				"value": "4",
+				"type": "str"
+			}
+		],
+		"payload": "",
+		"topic": "topic",
+		"topicType": "msg",
+		"className": "",
+		"x": 300,
+		"y": 1120,
+		"wires": [
+			[
+				"b37a8fdb.37bc9"
+			]
+		]
+	},
+	{
+		"id": "105226eb.0997d9",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": "1",
+		"topic": "",
+		"payload": "mode",
+		"payloadType": "flow",
+		"x": 110,
+		"y": 1120,
+		"wires": [
+			[
+				"41b7e465.0656dc"
+			]
+		]
+	},
+	{
+		"id": "b37a8fdb.37bc9",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "mode",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 480,
+		"y": 1120,
+		"wires": [
+			[
+				"d343cc532ebc066c"
+			]
+		]
+	},
+	{
+		"id": "346b41ce.04be2e",
+		"type": "ui_slider",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "Комфорт",
+		"tooltip": "",
+		"group": "97c53d99.6936d",
+		"order": 3,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"outs": "end",
+		"topic": "topic",
+		"topicType": "msg",
+		"min": 0,
+		"max": "400",
+		"step": 1,
+		"className": "",
+		"x": 340,
+		"y": 1320,
+		"wires": [
+			[
+				"59c6321c528e739b"
+			]
+		]
+	},
+	{
+		"id": "bb5926f3.931018",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": "0.2",
+		"topic": "",
+		"payload": "comfortFlow",
+		"payloadType": "flow",
+		"x": 130,
+		"y": 1320,
+		"wires": [
+			[
+				"346b41ce.04be2e"
+			]
+		]
+	},
+	{
+		"id": "c33d7421.79eb68",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "comfortFlow",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 710,
+		"y": 1320,
+		"wires": [
+			[
+				"f28840b02902c2a1"
+			]
+		]
+	},
+	{
+		"id": "d3bcfde1.25af3",
+		"type": "ui_slider",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "Отсутствие",
+		"tooltip": "",
+		"group": "97c53d99.6936d",
+		"order": 4,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"outs": "end",
+		"topic": "topic",
+		"topicType": "msg",
+		"min": 0,
+		"max": "400",
+		"step": 1,
+		"className": "",
+		"x": 350,
+		"y": 1360,
+		"wires": [
+			[
+				"83fd7e3215e07067"
+			]
+		]
+	},
+	{
+		"id": "dbcdd5bf.dcc268",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": "0.2",
+		"topic": "",
+		"payload": "absentFlow",
+		"payloadType": "flow",
+		"x": 120,
+		"y": 1360,
+		"wires": [
+			[
+				"d3bcfde1.25af3"
+			]
+		]
+	},
+	{
+		"id": "41e3bc93.e33dc4",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "absentFlow",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 700,
+		"y": 1360,
+		"wires": [
+			[
+				"f28840b02902c2a1"
+			]
+		]
+	},
+	{
+		"id": "6d701f2c.a2dd3",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "onBoot",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "",
+		"payloadType": "date",
+		"x": 100,
+		"y": 920,
+		"wires": [
+			[
+				"1ff11719.4ab509"
+			]
+		]
+	},
+	{
+		"id": "1ff11719.4ab509",
+		"type": "function",
+		"z": "1d84ff89.725df",
+		"name": "setDefaults",
+		"func": "if (flow.get(\"mode\") == undefined) {\n    flow.set(\"mode\", \"0\");\n}\nif (flow.get(\"curMode\") == undefined) {\n    flow.set(\"curMode\", \"comfort\");\n}\nif (flow.get(\"comfortFlow\") == undefined) {\n    flow.set(\"comfortFlow\", 100);\n}\nif (flow.get(\"targetFlow\") == undefined) {\n    flow.set(\"targetFlow\", 100);\n}\nif (flow.get(\"absentFlow\") == undefined) {\n    flow.set(\"absentFlow\", 50);\n}\nif (flow.get(\"presence\") == undefined) {\n    flow.set(\"presence\", \"false\");\n}\nif (flow.get(\"presenceReaction\") == undefined) {\n    flow.set(\"presenceReaction\", \"nothing\");\n}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 280,
+		"y": 920,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "41808afb.a31724",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"d": true,
+		"group": "97c53d99.6936d",
+		"order": 1,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Расч. расход",
+		"format": "{{msg.payload}} м³/ч",
+		"layout": "row-spread",
+		"className": "",
+		"x": 440,
+		"y": 1800,
+		"wires": []
+	},
+	{
+		"id": "983ab347.4d211",
+		"type": "ui_text",
+		"z": "1d84ff89.725df",
+		"group": "97c53d99.6936d",
+		"order": 5,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Текущий режим:",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 1330,
+		"y": 1280,
+		"wires": []
+	},
+	{
+		"id": "a03ae520.936e78",
+		"type": "comment",
+		"z": "1d84ff89.725df",
+		"name": "Не работает! Отключено",
+		"info": "",
+		"x": 130,
+		"y": 1760,
+		"wires": []
+	},
+	{
+		"id": "e8b3b4f2.7bc1b8",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 560,
+		"y": 40,
+		"wires": [
+			[
+				"cd4c2e52.06824"
+			]
+		]
+	},
+	{
+		"id": "914387d9.f81e98",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 560,
+		"y": 100,
+		"wires": [
+			[
+				"85ddef38.459a2"
+			]
+		]
+	},
+	{
+		"id": "ee36bc9d.43872",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 580,
+		"y": 260,
+		"wires": [
+			[
+				"6befeb7f.03cc24"
+			]
+		]
+	},
+	{
+		"id": "d7ca5f45.d5abb",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 580,
+		"y": 320,
+		"wires": [
+			[
+				"5c3577d1.ebcaf8"
+			]
+		]
+	},
+	{
+		"id": "36834cff.5d9584",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 560,
+		"y": 420,
+		"wires": [
+			[
+				"e520e4c5.6c7678"
+			]
+		]
+	},
+	{
+		"id": "4fb5f9e1.eae738",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 560,
+		"y": 480,
+		"wires": [
+			[
+				"806b3b7e.6d4bf8"
+			]
+		]
+	},
+	{
+		"id": "4287b58061d91ff1",
+		"type": "homekit-service",
+		"z": "1d84ff89.725df",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "Blizzard Lufttechnik",
+		"serviceName": "Fan",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "Model 1",
+		"serialNo": "AF7THKZV",
+		"firmwareRev": "1.0.0",
+		"hardwareRev": "1.0.0",
+		"softwareRev": "1.0.0",
+		"cameraConfigVideoProcessor": "",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": "",
+		"cameraConfigMaxWidth": "",
+		"cameraConfigMaxHeight": "",
+		"cameraConfigMaxFPS": "",
+		"cameraConfigMaxBitrate": "",
+		"cameraConfigVideoCodec": "",
+		"cameraConfigAudioCodec": "",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": "",
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "",
+		"cameraConfigMapAudio": "",
+		"cameraConfigVideoFilter": "",
+		"cameraConfigAdditionalCommandLine": "",
+		"cameraConfigDebug": false,
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"RotationSpeed\":{\"minValue\":0,\"maxValue\":400}}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 850,
+		"y": 1000,
+		"wires": [
+			[
+				"de08c7c42b23fbc2",
+				"eb8bfeed676e4c1c"
+			],
+			[]
+		]
+	},
+	{
+		"id": "77abc3fb8d836015",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "On",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload.On",
+				"pt": "msg",
+				"to": "1",
+				"tot": "num"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 670,
+		"y": 980,
+		"wires": [
+			[
+				"4287b58061d91ff1"
+			]
+		]
+	},
+	{
+		"id": "9ed6bec38d3dca7c",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "RotationSpeed",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.RotationSpeed",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 380,
+		"y": 1000,
+		"wires": [
+			[
+				"9c27e6b30388639c"
+			]
+		]
+	},
+	{
+		"id": "de08c7c42b23fbc2",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "On",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.On",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1030,
+		"y": 980,
+		"wires": [
+			[
+				"5bf2f2f92ff6e468"
+			]
+		]
+	},
+	{
+		"id": "db15bc0af35e10eb",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "Comfort",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "0",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1640,
+		"y": 980,
+		"wires": [
+			[
+				"390b6619b557ef14"
+			]
+		]
+	},
+	{
+		"id": "763385635df52cc6",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "Standby",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "2",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1640,
+		"y": 940,
+		"wires": [
+			[
+				"390b6619b557ef14"
+			]
+		]
+	},
+	{
+		"id": "7786d58de8111f7c",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "RotationSpeed",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.RotationSpeed",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1060,
+		"y": 880,
+		"wires": [
+			[
+				"bcc5325a58b298a2"
+			]
+		]
+	},
+	{
+		"id": "a6acf50e3ca3ab55",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "Off",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload.On",
+				"pt": "msg",
+				"to": "0",
+				"tot": "num"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 670,
+		"y": 1020,
+		"wires": [
+			[
+				"4287b58061d91ff1"
+			]
+		]
+	},
+	{
+		"id": "89061277abe8dd28",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "On?",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "true"
+			},
+			{
+				"t": "false"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 1370,
+		"y": 940,
+		"wires": [
+			[],
+			[
+				"763385635df52cc6"
+			]
+		]
+	},
+	{
+		"id": "89ee4db122d3358a",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "On?",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "true"
+			},
+			{
+				"t": "false"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 1370,
+		"y": 980,
+		"wires": [
+			[
+				"db15bc0af35e10eb"
+			],
+			[]
+		]
+	},
+	{
+		"id": "9c331f2067779cee",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "flow.mode?",
+		"property": "curMode",
+		"propertyType": "flow",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "comfort",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "absent",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "off",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "timer.inrush",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "timer.comfort",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "timer.absent",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "auto",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "presence.auto",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "presence.comfort",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 9,
+		"x": 1430,
+		"y": 780,
+		"wires": [
+			[
+				"f59162216203e6c4"
+			],
+			[
+				"712477bf09a182c7"
+			],
+			[
+				"f59162216203e6c4",
+				"db15bc0af35e10eb"
+			],
+			[
+				"f59162216203e6c4",
+				"db15bc0af35e10eb"
+			],
+			[
+				"f59162216203e6c4"
+			],
+			[
+				"712477bf09a182c7"
+			],
+			[
+				"f59162216203e6c4",
+				"db15bc0af35e10eb"
+			],
+			[
+				"f28840b02902c2a1"
+			],
+			[
+				"f59162216203e6c4"
+			]
+		]
+	},
+	{
+		"id": "390b6619b557ef14",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "mode",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1840,
+		"y": 960,
+		"wires": [
+			[
+				"41b7e465.0656dc"
+			]
+		]
+	},
+	{
+		"id": "f59162216203e6c4",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "comfortFlow",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1770,
+		"y": 760,
+		"wires": [
+			[
+				"346b41ce.04be2e",
+				"d343cc532ebc066c"
+			]
+		]
+	},
+	{
+		"id": "712477bf09a182c7",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "absentFlow",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1760,
+		"y": 800,
+		"wires": [
+			[
+				"d3bcfde1.25af3",
+				"d343cc532ebc066c"
+			]
+		]
+	},
+	{
+		"id": "59c6321c528e739b",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "zero?",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "num"
+			},
+			{
+				"t": "else"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 490,
+		"y": 1320,
+		"wires": [
+			[
+				"51f203ddf8675ce1"
+			],
+			[
+				"c33d7421.79eb68"
+			]
+		]
+	},
+	{
+		"id": "83fd7e3215e07067",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "zero?",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "num"
+			},
+			{
+				"t": "else"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 490,
+		"y": 1360,
+		"wires": [
+			[
+				"51f203ddf8675ce1"
+			],
+			[
+				"41e3bc93.e33dc4"
+			]
+		]
+	},
+	{
+		"id": "51f203ddf8675ce1",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "set Standby",
+		"rules": [
+			{
+				"t": "set",
+				"p": "mode",
+				"pt": "flow",
+				"to": "2",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 650,
+		"y": 1400,
+		"wires": [
+			[
+				"f28840b02902c2a1"
+			]
+		]
+	},
+	{
+		"id": "f28840b02902c2a1",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "flow.mode",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "mode",
+				"tot": "flow"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 970,
+		"y": 1380,
+		"wires": [
+			[
+				"41b7e465.0656dc"
+			]
+		]
+	},
+	{
+		"id": "dfa008e96b6d90f3",
+		"type": "link in",
+		"z": "1d84ff89.725df",
+		"name": "Присутствие",
+		"links": [
+			"322f8eb8a15c7074"
+		],
+		"x": 175,
+		"y": 1520,
+		"wires": [
+			[
+				"310c36b36ff75479"
+			]
+		]
+	},
+	{
+		"id": "18216e689cfa3fb9",
+		"type": "PID",
+		"z": "1d84ff89.725df",
+		"name": "CO2",
+		"setpoint": "600",
+		"pb": "400",
+		"ti": "1800",
+		"td": 0,
+		"integral_default": 0.5,
+		"smooth_factor": 3,
+		"max_interval": 600,
+		"enable": 1,
+		"disabled_op": "0.1",
+		"x": 290,
+		"y": 1600,
+		"wires": [
+			[
+				"16e9f55c18442201"
+			]
+		]
+	},
+	{
+		"id": "16e9f55c18442201",
+		"type": "range",
+		"z": "1d84ff89.725df",
+		"minin": "0",
+		"maxin": "1",
+		"minout": "400",
+		"maxout": "50",
+		"action": "scale",
+		"round": true,
+		"property": "payload",
+		"name": "",
+		"x": 420,
+		"y": 1600,
+		"wires": [
+			[
+				"06e2f970aface97c"
+			]
+		]
+	},
+	{
+		"id": "8ee7bbf35403a981",
+		"type": "link in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"links": [
+			"ee537aa72d4e41c9"
+		],
+		"x": 175,
+		"y": 1600,
+		"wires": [
+			[
+				"18216e689cfa3fb9"
+			]
+		]
+	},
+	{
+		"id": "06e2f970aface97c",
+		"type": "aggregator",
+		"z": "1d84ff89.725df",
+		"name": "maximum",
+		"topic": "",
+		"intervalCount": "10",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "max",
+		"x": 600,
+		"y": 1600,
+		"wires": [
+			[
+				"5d0c990f26d63176"
+			]
+		]
+	},
+	{
+		"id": "d58b1f91a03237ac",
+		"type": "link in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"links": [
+			"fa7453420edb02e2"
+		],
+		"x": 175,
+		"y": 1640,
+		"wires": [
+			[
+				"40abaf598312edb1"
+			]
+		]
+	},
+	{
+		"id": "40abaf598312edb1",
+		"type": "PID",
+		"z": "1d84ff89.725df",
+		"name": "VOC",
+		"setpoint": "220",
+		"pb": "440",
+		"ti": "1800",
+		"td": 0,
+		"integral_default": 0.5,
+		"smooth_factor": 3,
+		"max_interval": 600,
+		"enable": 1,
+		"disabled_op": "0.1",
+		"x": 290,
+		"y": 1640,
+		"wires": [
+			[
+				"0e0719c7fd659f80"
+			]
+		]
+	},
+	{
+		"id": "0e0719c7fd659f80",
+		"type": "range",
+		"z": "1d84ff89.725df",
+		"minin": "0",
+		"maxin": "1",
+		"minout": "400",
+		"maxout": "50",
+		"action": "scale",
+		"round": true,
+		"property": "payload",
+		"name": "",
+		"x": 420,
+		"y": 1640,
+		"wires": [
+			[
+				"06e2f970aface97c"
+			]
+		]
+	},
+	{
+		"id": "42279cd5af158043",
+		"type": "link in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"links": [
+			"81449d7c0d3640ec"
+		],
+		"x": 175,
+		"y": 1560,
+		"wires": [
+			[
+				"18216e689cfa3fb9"
+			]
+		]
+	},
+	{
+		"id": "f8fe78a999d37242",
+		"type": "link in",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"links": [
+			"8ddef075c64d1629"
+		],
+		"x": 175,
+		"y": 1680,
+		"wires": [
+			[
+				"40abaf598312edb1"
+			]
+		]
+	},
+	{
+		"id": "eb8bfeed676e4c1c",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "есть RotationSpeed",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "hask",
+				"v": "RotationSpeed",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 700,
+		"y": 880,
+		"wires": [
+			[
+				"28702537daef1a5e"
+			]
+		]
+	},
+	{
+		"id": "dddc7de4233c5f3b",
+		"type": "ui_dropdown",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"label": "При присутствии",
+		"tooltip": "",
+		"place": "Выберите реакцию",
+		"group": "97c53d99.6936d",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"passthru": false,
+		"multiple": false,
+		"options": [
+			{
+				"label": "Включать Авто",
+				"value": "auto",
+				"type": "str"
+			},
+			{
+				"label": "Включать Комфорт",
+				"value": "comfort",
+				"type": "str"
+			},
+			{
+				"label": "Ничего не делать",
+				"value": "nothing",
+				"type": "str"
+			}
+		],
+		"payload": "",
+		"topic": "topic",
+		"topicType": "msg",
+		"className": "",
+		"x": 390,
+		"y": 1440,
+		"wires": [
+			[
+				"a964a2a2118d2756"
+			]
+		]
+	},
+	{
+		"id": "d1379e50a8ac725f",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": "1",
+		"topic": "",
+		"payload": "presenceReaction",
+		"payloadType": "flow",
+		"x": 150,
+		"y": 1440,
+		"wires": [
+			[
+				"dddc7de4233c5f3b"
+			]
+		]
+	},
+	{
+		"id": "a964a2a2118d2756",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "presenceReaction",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 660,
+		"y": 1440,
+		"wires": [
+			[
+				"d343cc532ebc066c"
+			]
+		]
+	},
+	{
+		"id": "86507be8e949750f",
+		"type": "function",
+		"z": "1d84ff89.725df",
+		"name": "Скорость и режим",
+		"func": "var descr = { payload: \"\" };\nvar curMode = { payload: \"\" };\n\n\nif (flow.get(\"mode\") == \"2\") {\n    msg.payload = 0;\n    descr.payload = \"Выключено\";\n    curMode.payload = \"off\";\n} else if (flow.get(\"presence\") == true && flow.get(\"presenceReaction\") == \"auto\") {\n    msg = null;\n    descr.payload = \"Авто 🏠\";\n    curMode.payload = \"presence.auto\";\n} else if (flow.get(\"presence\") == true && flow.get(\"presenceReaction\") == \"comfort\") {\n    msg.payload = flow.get(\"comfortFlow\");\n    descr.payload = \"Комфорт 🏠\";\n    curMode.payload = \"presence.comfort\";\n} else if (flow.get(\"mode\") == \"0\") {\n    msg.payload = flow.get(\"comfortFlow\");\n    descr.payload = \"Комфорт\";\n    curMode.payload = \"comfort\";\n} else if (flow.get(\"mode\") == \"1\") {\n    msg.payload = flow.get(\"absentFlow\");\n    descr.payload = \"Отсутствие\";\n    curMode.payload = \"absent\";\n} else if (flow.get(\"mode\") == \"3\") {\n    if (msg.hasOwnProperty(\"getStatus\")) {\n        if (context.get(\"lastVal\") != undefined) {\n            msg.payload = context.get(\"lastVal\");\n        } else {\n            msg.payload = false;\n        }\n    }\n    if (context.get(\"lastVal\") == undefined) {\n        context.set(\"lastVal\", msg.payload);\n        context.set(\"timer\"), Date.now();\n    }\n    if (context.get(\"lastVal\") != msg.payload) {\n        context.set(\"lastVal\", msg.payload);\n        if (msg.payload == true) {\n            context.set(\"timer\", Date.now() + 20*60*1000);\n        }\n    }\n    if (msg.payload == true && context.get(\"timer\") > Date.now()) {\n        msg.payload = 400; //going full speed for 20 minutes\n        descr.payload = \"Залповое проветривание 🕑\";\n        curMode.payload = \"timer.inrush\";\n    } else {\n        if (msg.payload == true) {\n            msg.payload = flow.get(\"comfortFlow\");\n            descr.payload = \"Комфорт 🕑\";\n            curMode.payload = \"timer.comfort\";\n        } else {\n            msg.payload = flow.get(\"absentFlow\");\n            descr.payload = \"Отсутствие 🕑\";\n            curMode.payload = \"timer.absent\";\n        }\n    }\n    return [msg, descr, curMode];\n} else if (flow.get(\"mode\") == \"4\") {\n    msg = null;\n    descr.payload = \"Авто\";\n    curMode.payload = \"auto\";\n}\nreturn [msg, descr, curMode];\n",
+		"outputs": 3,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 990,
+		"y": 1280,
+		"wires": [
+			[
+				"c5cb5c62.c6eee",
+				"9ed6bec38d3dca7c"
+			],
+			[
+				"983ab347.4d211"
+			],
+			[
+				"ad12719c73285de8"
+			]
+		]
+	},
+	{
+		"id": "2e890810142882b2",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "setControlModeFromModbus",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "600",
+		"crontab": "",
+		"once": true,
+		"onceDelay": "1",
+		"topic": "",
+		"payload": "4",
+		"payloadType": "str",
+		"x": 1090,
+		"y": 1160,
+		"wires": [
+			[
+				"5730e705.e3fd28"
+			]
+		]
+	},
+	{
+		"id": "ad12719c73285de8",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "curMode",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1350,
+		"y": 1340,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "d343cc532ebc066c",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "getStatus",
+				"pt": "msg",
+				"to": "true",
+				"tot": "bool"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 720,
+		"y": 1280,
+		"wires": [
+			[
+				"86507be8e949750f"
+			]
+		]
+	},
+	{
+		"id": "9c27e6b30388639c",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "> 0",
+		"property": "payload.RotationSpeed",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "gt",
+				"v": "0",
+				"vt": "num"
+			},
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "num"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 550,
+		"y": 1000,
+		"wires": [
+			[
+				"77abc3fb8d836015"
+			],
+			[
+				"a6acf50e3ca3ab55"
+			]
+		]
+	},
+	{
+		"id": "5d0c990f26d63176",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"op1": "",
+		"op2": "0",
+		"op1type": "pay",
+		"op2type": "str",
+		"duration": "-30",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "s",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 810,
+		"y": 1600,
+		"wires": [
+			[
+				"09f9ed79823a4c06"
+			]
+		]
+	},
+	{
+		"id": "310c36b36ff75479",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "presence",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 360,
+		"y": 1520,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "09f9ed79823a4c06",
+		"type": "function",
+		"z": "1d84ff89.725df",
+		"name": "auto?",
+		"func": "if (flow.get(\"curMode\") == \"auto\" ||\n    flow.get(\"curMode\") == \"presence.auto\") {\n    return msg;\n}",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 1010,
+		"y": 1600,
+		"wires": [
+			[
+				"c5cb5c62.c6eee",
+				"9ed6bec38d3dca7c"
+			]
+		]
+	},
+	{
+		"id": "bcc5325a58b298a2",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "zero?",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "num"
+			},
+			{
+				"t": "else"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 1230,
+		"y": 880,
+		"wires": [
+			[
+				"763385635df52cc6"
+			],
+			[
+				"9c331f2067779cee"
+			]
+		]
+	},
+	{
+		"id": "5bf2f2f92ff6e468",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "flow.mode?",
+		"property": "curMode",
+		"propertyType": "flow",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "comfort",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "absent",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "off",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "timer.inrush",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "timer.comfort",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "timer.absent",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "auto",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "presence.auto",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "presence.comfort",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 9,
+		"x": 1170,
+		"y": 980,
+		"wires": [
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89ee4db122d3358a"
+			],
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89061277abe8dd28"
+			],
+			[
+				"89061277abe8dd28"
+			]
+		]
+	},
+	{
+		"id": "28702537daef1a5e",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"property": "payload.RotationSpeed",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "lt",
+				"v": "400",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "400",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 2,
+		"x": 890,
+		"y": 880,
+		"wires": [
+			[
+				"7786d58de8111f7c"
+			],
+			[
+				"db15bc0af35e10eb"
+			]
+		]
+	},
+	{
+		"id": "f242c33118b9fedb",
+		"type": "homekit-service",
+		"z": "1d84ff89.725df",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "4287b58061d91ff1",
+		"name": "Камин",
+		"serviceName": "Switch",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "Режим Камина",
+		"serialNo": "1.1.1",
+		"firmwareRev": "1.1.1",
+		"hardwareRev": "1.1.1",
+		"softwareRev": "1.0.0",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 850,
+		"y": 2080,
+		"wires": [
+			[
+				"e6d85c5a4aaf13b7"
+			],
+			[]
+		]
+	},
+	{
+		"id": "9b94ea8ac59a483e",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "Дисбаланс",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "eq",
+				"v": "0",
+				"vt": "str"
+			},
+			{
+				"t": "eq",
+				"v": "1",
+				"vt": "str"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 470,
+		"y": 2100,
+		"wires": [
+			[
+				"496bfbcd0042df97"
+			],
+			[
+				"741a7b20f78bee05"
+			]
+		]
+	},
+	{
+		"id": "496bfbcd0042df97",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "On",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "{\"On\":true}",
+				"tot": "json"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 670,
+		"y": 2060,
+		"wires": [
+			[
+				"f242c33118b9fedb"
+			]
+		]
+	},
+	{
+		"id": "741a7b20f78bee05",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "Off",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "{\"On\":false}",
+				"tot": "json"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 670,
+		"y": 2100,
+		"wires": [
+			[
+				"f242c33118b9fedb"
+			]
+		]
+	},
+	{
+		"id": "e6d85c5a4aaf13b7",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"property": "payload.On",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "true"
+			},
+			{
+				"t": "else"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 2,
+		"x": 1010,
+		"y": 2080,
+		"wires": [
+			[
+				"480e6cb3512cbcb4"
+			],
+			[
+				"a749e81ac46d1cf9"
+			]
+		]
+	},
+	{
+		"id": "480e6cb3512cbcb4",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "0",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "0",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1190,
+		"y": 2100,
+		"wires": [
+			[
+				"a2b6a2e.1f2ee6"
+			]
+		]
+	},
+	{
+		"id": "a749e81ac46d1cf9",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "1",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "1",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1190,
+		"y": 2140,
+		"wires": [
+			[
+				"a2b6a2e.1f2ee6"
+			]
+		]
+	},
+	{
+		"id": "46ad686bec45f00c",
+		"type": "homekit-service",
+		"z": "1d84ff89.725df",
+		"isParent": false,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "181e951708490e7a",
+		"name": "Фильтр",
+		"serviceName": "FilterMaintenance",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"FilterChangeIndication\":true,\"FilterResetChangeIndication\":true}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 660,
+		"y": 1840,
+		"wires": [
+			[
+				"729d8f2e19a67870"
+			],
+			[]
+		]
+	},
+	{
+		"id": "a79109e0c7ac6cbc",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "FilterChangeIndication",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.FilterChangeIndication",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 460,
+		"y": 1840,
+		"wires": [
+			[
+				"46ad686bec45f00c"
+			]
+		]
+	},
+	{
+		"id": "729d8f2e19a67870",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"property": "payload.FilterResetChangeIndication",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "true"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 820,
+		"y": 1840,
+		"wires": [
+			[
+				"43d722a6.88a29c"
+			]
+		]
+	},
+	{
+		"id": "03e01373f129ef55",
+		"type": "inject",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": false,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "1",
+		"payloadType": "num",
+		"x": 190,
+		"y": 1840,
+		"wires": [
+			[
+				"a79109e0c7ac6cbc",
+				"cde7e8563bf55e42"
+			]
+		]
+	},
+	{
+		"id": "181e951708490e7a",
+		"type": "homekit-service",
+		"z": "1d84ff89.725df",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "Фильтр",
+		"serviceName": "AirPurifier",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"TargetAirPurifierState\":false}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 660,
+		"y": 1760,
+		"wires": [
+			[
+				"ccdfa053413943eb",
+				"a76b04911eda0a0a"
+			],
+			[]
+		]
+	},
+	{
+		"id": "cde7e8563bf55e42",
+		"type": "change",
+		"z": "1d84ff89.725df",
+		"name": "Active",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.Active",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 410,
+		"y": 1760,
+		"wires": [
+			[
+				"181e951708490e7a"
+			]
+		]
+	},
+	{
+		"id": "ccdfa053413943eb",
+		"type": "switch",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"property": "payload.Active",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "true"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 830,
+		"y": 1760,
+		"wires": [
+			[
+				"43d722a6.88a29c"
+			]
+		]
+	},
+	{
+		"id": "a76b04911eda0a0a",
+		"type": "delay",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"pauseType": "delay",
+		"timeout": "1",
+		"timeoutUnits": "seconds",
+		"rate": "1",
+		"nbRateUnits": "1",
+		"rateUnits": "second",
+		"randomFirst": "1",
+		"randomLast": "5",
+		"randomUnits": "seconds",
+		"drop": false,
+		"allowrate": false,
+		"outputs": 1,
+		"x": 660,
+		"y": 1700,
+		"wires": [
+			[
+				"181e951708490e7a",
+				"fbcb349145445d64"
+			]
+		]
+	},
+	{
+		"id": "fbcb349145445d64",
+		"type": "trigger",
+		"z": "1d84ff89.725df",
+		"name": "",
+		"op1": "",
+		"op2": "{\"TargetAirPurifierState\":0,\"Active\":0}",
+		"op1type": "nul",
+		"op2type": "json",
+		"duration": "1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "s",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 680,
+		"y": 1660,
+		"wires": [
+			[
+				"181e951708490e7a"
+			]
+		]
+	},
+	{
+		"id": "47222dd.98211d4",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/Air Quality (VOC)"
+		],
+		"outputAtStartup": true,
+		"x": 150,
+		"y": 60,
+		"wires": [
+			[
+				"bf6f966dc0cf157d"
+			]
+		]
+	},
+	{
+		"id": "b7997f3e.9d738",
+		"type": "ui_chart",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 1,
+		"width": 0,
+		"height": 0,
+		"label": "Загрязнение",
+		"chartType": "line",
+		"legend": "false",
+		"xformat": "HH:mm:ss",
+		"interpolate": "linear",
+		"nodata": "",
+		"dot": false,
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "86400",
+		"cutout": 0,
+		"useOneColor": false,
+		"useUTC": false,
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"outputs": 1,
+		"useDifferentColor": false,
+		"className": "",
+		"x": 1000,
+		"y": 60,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "9a9eaa53.50be28",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/CO2"
+		],
+		"outputAtStartup": true,
+		"x": 110,
+		"y": 120,
+		"wires": [
+			[
+				"19bfabfa.e0fba4"
+			]
+		]
+	},
+	{
+		"id": "24c6cc14.5d58e4",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/Humidity"
+		],
+		"outputAtStartup": true,
+		"x": 130,
+		"y": 180,
+		"wires": [
+			[
+				"f2a1c841.b37fd8"
+			]
+		]
+	},
+	{
+		"id": "9cd41845.7b6e28",
+		"type": "ui_chart",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 6,
+		"width": 0,
+		"height": 0,
+		"label": "Температура, влажность",
+		"chartType": "line",
+		"legend": "false",
+		"xformat": "HH:mm:ss",
+		"interpolate": "linear",
+		"nodata": "",
+		"dot": false,
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "86400",
+		"cutout": 0,
+		"useOneColor": false,
+		"useUTC": false,
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"outputs": 1,
+		"useDifferentColor": false,
+		"className": "",
+		"x": 1040,
+		"y": 260,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "60c97bb2.571e14",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/Temperature"
+		],
+		"outputAtStartup": true,
+		"x": 140,
+		"y": 240,
+		"wires": [
+			[
+				"b88cc704.078688"
+			]
+		]
+	},
+	{
+		"id": "806ed8f9.671b58",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/Illuminance"
+		],
+		"outputAtStartup": true,
+		"x": 140,
+		"y": 300,
+		"wires": [
+			[
+				"e0cbb555.ec7298"
+			]
+		]
+	},
+	{
+		"id": "cfe4705e.b7625",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/Max Motion"
+		],
+		"outputAtStartup": true,
+		"x": 140,
+		"y": 360,
+		"wires": [
+			[
+				"d9966d03.c8d02"
+			]
+		]
+	},
+	{
+		"id": "c6aa3312.7ace5",
+		"type": "wirenboard-in",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"server": "af639d52.140f4",
+		"channel": [
+			"/devices/wb-msw-v3_39/controls/Sound Level"
+		],
+		"outputAtStartup": true,
+		"x": 140,
+		"y": 420,
+		"wires": [
+			[
+				"a8ccf625.eb5418"
+			]
+		]
+	},
+	{
+		"id": "ffb280e.5ae478",
+		"type": "ui_chart",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 7,
+		"width": 0,
+		"height": 0,
+		"label": "Присутствие",
+		"chartType": "line",
+		"legend": "false",
+		"xformat": "HH:mm:ss",
+		"interpolate": "linear",
+		"nodata": "",
+		"dot": false,
+		"ymin": "",
+		"ymax": "",
+		"removeOlder": 1,
+		"removeOlderPoints": "",
+		"removeOlderUnit": "86400",
+		"cutout": 0,
+		"useOneColor": false,
+		"useUTC": false,
+		"colors": [
+			"#1f77b4",
+			"#aec7e8",
+			"#ff7f0e",
+			"#2ca02c",
+			"#98df8a",
+			"#d62728",
+			"#ff9896",
+			"#9467bd",
+			"#c5b0d5"
+		],
+		"outputs": 1,
+		"useDifferentColor": false,
+		"className": "",
+		"x": 1000,
+		"y": 300,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "4383b545.40ccdc",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Качество воздуха (ЛОС)",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 60,
+		"wires": [
+			[
+				"b7997f3e.9d738",
+				"cec8a22710f372b1",
+				"fa7453420edb02e2",
+				"e2bac5c912e7f649",
+				"4647d05f836dd48a"
+			]
+		]
+	},
+	{
+		"id": "769c9c02.591ac4",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "CO2",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 120,
+		"wires": [
+			[
+				"b7997f3e.9d738",
+				"eb61b5455d31871d",
+				"09b771b13f60e68e",
+				"ee537aa72d4e41c9",
+				"30b581dfd65b967d"
+			]
+		]
+	},
+	{
+		"id": "dea6672.dcc0d98",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Влажность",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 180,
+		"wires": [
+			[
+				"9cd41845.7b6e28",
+				"b4a251c2eb22d52a"
+			]
+		]
+	},
+	{
+		"id": "f68b771c.04d628",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Температура",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 240,
+		"wires": [
+			[
+				"9cd41845.7b6e28",
+				"63317cea4c7b34fe"
+			]
+		]
+	},
+	{
+		"id": "a35c9eb0.d888",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Освещенность",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 300,
+		"wires": [
+			[
+				"ffb280e.5ae478",
+				"db6edaa2805bb662"
+			]
+		]
+	},
+	{
+		"id": "d0269353.81788",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Движение",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 360,
+		"wires": [
+			[
+				"ffb280e.5ae478",
+				"f86e07ac085eedc6"
+			]
+		]
+	},
+	{
+		"id": "9db78c66.f0222",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Звук",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 740,
+		"y": 420,
+		"wires": [
+			[
+				"ffb280e.5ae478",
+				"2d383a71504b5a39"
+			]
+		]
+	},
+	{
+		"id": "5ad939af.1060f8",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "median",
+		"x": 550,
+		"y": 60,
+		"wires": [
+			[
+				"4383b545.40ccdc"
+			]
+		]
+	},
+	{
+		"id": "9bc20c2a.60718",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "median",
+		"x": 550,
+		"y": 120,
+		"wires": [
+			[
+				"769c9c02.591ac4"
+			]
+		]
+	},
+	{
+		"id": "ebd581b2.9dca",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "median",
+		"x": 550,
+		"y": 180,
+		"wires": [
+			[
+				"dea6672.dcc0d98"
+			]
+		]
+	},
+	{
+		"id": "f712d96b.313258",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "median",
+		"x": 550,
+		"y": 240,
+		"wires": [
+			[
+				"f68b771c.04d628"
+			]
+		]
+	},
+	{
+		"id": "2bc1d4a2.1b3c8c",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "median",
+		"x": 550,
+		"y": 300,
+		"wires": [
+			[
+				"a35c9eb0.d888"
+			]
+		]
+	},
+	{
+		"id": "839a35f5.770408",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "max",
+		"x": 550,
+		"y": 360,
+		"wires": [
+			[
+				"d0269353.81788"
+			]
+		]
+	},
+	{
+		"id": "4c257274.52932c",
+		"type": "aggregator",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"topic": "",
+		"intervalCount": "5",
+		"intervalUnits": "m",
+		"submitIncompleteInterval": true,
+		"submitPerTopic": false,
+		"aggregationType": "max",
+		"x": 550,
+		"y": 420,
+		"wires": [
+			[
+				"9db78c66.f0222"
+			]
+		]
+	},
+	{
+		"id": "e1f186d7.1fcf18",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 460,
+		"y": 20,
+		"wires": [
+			[
+				"5ad939af.1060f8"
+			]
+		]
+	},
+	{
+		"id": "19bfabfa.e0fba4",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 380,
+		"y": 120,
+		"wires": [
+			[
+				"9bc20c2a.60718"
+			]
+		]
+	},
+	{
+		"id": "f2a1c841.b37fd8",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 380,
+		"y": 180,
+		"wires": [
+			[
+				"ebd581b2.9dca"
+			]
+		]
+	},
+	{
+		"id": "b88cc704.078688",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 380,
+		"y": 240,
+		"wires": [
+			[
+				"f712d96b.313258"
+			]
+		]
+	},
+	{
+		"id": "e0cbb555.ec7298",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 380,
+		"y": 300,
+		"wires": [
+			[
+				"2bc1d4a2.1b3c8c"
+			]
+		]
+	},
+	{
+		"id": "d9966d03.c8d02",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 380,
+		"y": 360,
+		"wires": [
+			[
+				"839a35f5.770408"
+			]
+		]
+	},
+	{
+		"id": "a8ccf625.eb5418",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "повт. раз в мин",
+		"op1": "",
+		"op2": "",
+		"op1type": "pay",
+		"op2type": "payl",
+		"duration": "-1",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 380,
+		"y": 420,
+		"wires": [
+			[
+				"4c257274.52932c"
+			]
+		]
+	},
+	{
+		"id": "0b0119ab502f58df",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "sensorID",
+				"pt": "flow",
+				"to": "39",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 130,
+		"y": 500,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "fe565fb085cd9f81",
+		"type": "ui_text",
+		"z": "af6ae872.30e0a8",
+		"group": "7c1c7f37.1abdd",
+		"order": 2,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "ЛОС:",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 1130,
+		"y": 100,
+		"wires": []
+	},
+	{
+		"id": "e2bac5c912e7f649",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "var iaq = {payload: 0};\nif (msg.payload <= 65) {\n    msg.payload = msg.payload + \" ppb (Отлично)\";\n    iaq.payload = 1;\n} else if (msg.payload <= 220) {\n    msg.payload = msg.payload + \" ppb (Хорошо)\";\n    iaq.payload = 2;\n} else if (msg.payload <= 660) {\n    msg.payload = msg.payload + \" ppb (Приемлемо)\";\n    iaq.payload = 3;\n} else if (msg.payload <= 2200) {\n    msg.payload = msg.payload + \" ppb (Неудовлетворительно!)\";\n    iaq.payload = 4;\n} else {\n    msg.payload = msg.payload + \" ppb (Опасно для здоровья!)\";\n    iaq.payload = 5;\n}\nreturn [msg, iaq];",
+		"outputs": 2,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 100,
+		"wires": [
+			[
+				"fe565fb085cd9f81"
+			],
+			[
+				"f8e9b4d5777a1583"
+			]
+		]
+	},
+	{
+		"id": "eb61b5455d31871d",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "if (msg.payload <= 450) {\n    msg.payload = msg.payload + \" ppm (Отлично)\"\n} else if (msg.payload <= 600) {\n    msg.payload = msg.payload + \" ppm (Хорошо)\"\n} else if (msg.payload <= 1000) {\n    msg.payload = msg.payload + \" ppm (Приемлемо)\"\n} else if (msg.payload <= 2500) {\n    msg.payload = msg.payload + \" ppm (Неудовлетворительно!)\"\n} else {\n    msg.payload = msg.payload + \" ppm (Опасно для здоровья!)\"\n}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 140,
+		"wires": [
+			[
+				"c393de37d8235755"
+			]
+		]
+	},
+	{
+		"id": "c393de37d8235755",
+		"type": "ui_text",
+		"z": "af6ae872.30e0a8",
+		"group": "7c1c7f37.1abdd",
+		"order": 3,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "CO₂:",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 1130,
+		"y": 140,
+		"wires": []
+	},
+	{
+		"id": "e30120f8449706c9",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Порог освещ.:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 8,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "1000",
+		"step": "10",
+		"className": "",
+		"x": 340,
+		"y": 720,
+		"wires": [
+			[
+				"785f11ee13456b28"
+			]
+		]
+	},
+	{
+		"id": "739a26e8b3525d99",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Порог движ.:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 9,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "4000",
+		"step": "10",
+		"className": "",
+		"x": 340,
+		"y": 760,
+		"wires": [
+			[
+				"e58588f23f40fdd4"
+			]
+		]
+	},
+	{
+		"id": "fbd1528003476114",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Порог звука:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 10,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "105",
+		"step": "5",
+		"className": "",
+		"x": 340,
+		"y": 800,
+		"wires": [
+			[
+				"73bdb18912134c8f"
+			]
+		]
+	},
+	{
+		"id": "a7f99b5814a015a5",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "setDefaults",
+		"func": "if (flow.get(\"illumPresence\") == undefined) {\n    flow.set(\"illumPresence\", \"200\");\n}\nif (flow.get(\"motionPresence\") == undefined) {\n    flow.set(\"motionPresence\", \"100\");\n}\nif (flow.get(\"soundPresence\") == undefined) {\n    flow.set(\"soundPresence\", \"60\");\n}\nif (flow.get(\"VOCPresence\") == undefined) {\n    flow.set(\"VOCPresence\", \"660\");\n}\nif (flow.get(\"CO2Presence\") == undefined) {\n    flow.set(\"CO2Presence\", \"1000\");\n}\nif (flow.get(\"VOCSetpoint\") == undefined) {\n    flow.set(\"VOCSetpoint\", 220);\n}\nif (flow.get(\"CO2Setpoint\") == undefined) {\n    flow.set(\"CO2Setpoint\", 600);\n}\nreturn msg;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 330,
+		"y": 560,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "d41e2091a63cc0d1",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "illumPresence",
+		"payloadType": "flow",
+		"x": 130,
+		"y": 720,
+		"wires": [
+			[
+				"e30120f8449706c9"
+			]
+		]
+	},
+	{
+		"id": "7773592bcec96499",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "motionPresence",
+		"payloadType": "flow",
+		"x": 140,
+		"y": 760,
+		"wires": [
+			[
+				"739a26e8b3525d99"
+			]
+		]
+	},
+	{
+		"id": "c83502f62d3e3d55",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "soundPresence",
+		"payloadType": "flow",
+		"x": 140,
+		"y": 800,
+		"wires": [
+			[
+				"fbd1528003476114"
+			]
+		]
+	},
+	{
+		"id": "785f11ee13456b28",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "illumPresence",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 590,
+		"y": 720,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "e58588f23f40fdd4",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "motionPresence",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 600,
+		"y": 760,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "73bdb18912134c8f",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "soundPresence",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 600,
+		"y": 800,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "db6edaa2805bb662",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "if (msg.payload >= flow.get(\"illumPresence\")) {\n    msg.payload = true;\n    return msg;\n}\nreturn null;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 340,
+		"wires": [
+			[
+				"bd455c1919be40c1"
+			]
+		]
+	},
+	{
+		"id": "f86e07ac085eedc6",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "if (msg.payload >= flow.get(\"motionPresence\")) {\n    msg.payload = true;\n    return msg;\n}\nreturn null;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 380,
+		"wires": [
+			[
+				"bd455c1919be40c1"
+			]
+		]
+	},
+	{
+		"id": "2d383a71504b5a39",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "if (msg.payload >= flow.get(\"soundPresence\")) {\n    msg.payload = true;\n    return msg;\n}\nreturn null;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 420,
+		"wires": [
+			[
+				"bd455c1919be40c1"
+			]
+		]
+	},
+	{
+		"id": "bd455c1919be40c1",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"op1": "true",
+		"op2": "false",
+		"op1type": "bool",
+		"op2type": "bool",
+		"duration": "10",
+		"extend": true,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 1160,
+		"y": 380,
+		"wires": [
+			[
+				"a7c21dc637b230b1",
+				"322f8eb8a15c7074",
+				"f9ad11fb24e28844",
+				"580a0cc3c78216d0"
+			]
+		]
+	},
+	{
+		"id": "a7c21dc637b230b1",
+		"type": "switch",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "true"
+			},
+			{
+				"t": "false"
+			}
+		],
+		"checkall": "false",
+		"repair": false,
+		"outputs": 2,
+		"x": 1370,
+		"y": 380,
+		"wires": [
+			[
+				"9dd1468486de8394"
+			],
+			[
+				"dab1a370d9724684"
+			]
+		]
+	},
+	{
+		"id": "9dd1468486de8394",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "да",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "да",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1530,
+		"y": 360,
+		"wires": [
+			[
+				"7e09eccc48d87f85"
+			]
+		]
+	},
+	{
+		"id": "dab1a370d9724684",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "нет",
+		"rules": [
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "нет",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1530,
+		"y": 400,
+		"wires": [
+			[
+				"7e09eccc48d87f85"
+			]
+		]
+	},
+	{
+		"id": "322f8eb8a15c7074",
+		"type": "link out",
+		"z": "af6ae872.30e0a8",
+		"name": "Presence",
+		"mode": "link",
+		"links": [
+			"dfa008e96b6d90f3"
+		],
+		"x": 1315,
+		"y": 420,
+		"wires": []
+	},
+	{
+		"id": "3472a5cd35c3adff",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Порог ЛОС:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 11,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "2200",
+		"step": "10",
+		"className": "",
+		"x": 330,
+		"y": 640,
+		"wires": [
+			[
+				"f0394028a8bc3d7b"
+			]
+		]
+	},
+	{
+		"id": "ba2a7a297c2c097d",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "VOCPresence",
+		"payloadType": "flow",
+		"x": 130,
+		"y": 640,
+		"wires": [
+			[
+				"3472a5cd35c3adff"
+			]
+		]
+	},
+	{
+		"id": "f0394028a8bc3d7b",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "VOCPresence",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 590,
+		"y": 640,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "5608db6c271a9e4f",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Порог CO₂:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 12,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "2500",
+		"step": "50",
+		"className": "",
+		"x": 330,
+		"y": 680,
+		"wires": [
+			[
+				"b3e1556e3135d5cd"
+			]
+		]
+	},
+	{
+		"id": "b28585eb5de65b4a",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "CO2Presence",
+		"payloadType": "flow",
+		"x": 130,
+		"y": 680,
+		"wires": [
+			[
+				"5608db6c271a9e4f"
+			]
+		]
+	},
+	{
+		"id": "b3e1556e3135d5cd",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "CO2Presence",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 590,
+		"y": 680,
+		"wires": [
+			[]
+		]
+	},
+	{
+		"id": "cec8a22710f372b1",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "if (msg.payload >= flow.get(\"VOCPresence\")) {\n    msg.payload = true;\n    return msg;\n}\nreturn null;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 180,
+		"wires": [
+			[
+				"bd455c1919be40c1"
+			]
+		]
+	},
+	{
+		"id": "09b771b13f60e68e",
+		"type": "function",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"func": "if (msg.payload >= flow.get(\"CO2Presence\")) {\n    msg.payload = true;\n    return msg;\n} else {\n    msg.payload = false;\n    return msg;\n}\nreturn null;",
+		"outputs": 1,
+		"noerr": 0,
+		"initialize": "",
+		"finalize": "",
+		"libs": [],
+		"x": 980,
+		"y": 220,
+		"wires": [
+			[
+				"bd455c1919be40c1",
+				"d5ec16c1b0206d00"
+			]
+		]
+	},
+	{
+		"id": "fa7453420edb02e2",
+		"type": "link out",
+		"z": "af6ae872.30e0a8",
+		"name": "VOC",
+		"mode": "link",
+		"links": [
+			"d58b1f91a03237ac"
+		],
+		"x": 1235,
+		"y": 100,
+		"wires": []
+	},
+	{
+		"id": "ee537aa72d4e41c9",
+		"type": "link out",
+		"z": "af6ae872.30e0a8",
+		"name": "CO2",
+		"mode": "link",
+		"links": [
+			"8ee7bbf35403a981"
+		],
+		"x": 1235,
+		"y": 140,
+		"wires": []
+	},
+	{
+		"id": "374fcdfb751c8470",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "onBoot",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "",
+		"payloadType": "date",
+		"x": 100,
+		"y": 560,
+		"wires": [
+			[
+				"a7f99b5814a015a5"
+			]
+		]
+	},
+	{
+		"id": "cd95301f0861b75b",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "false",
+		"payloadType": "bool",
+		"x": 1170,
+		"y": 460,
+		"wires": [
+			[
+				"a7c21dc637b230b1"
+			]
+		]
+	},
+	{
+		"id": "7e09eccc48d87f85",
+		"type": "ui_text",
+		"z": "af6ae872.30e0a8",
+		"group": "7c1c7f37.1abdd",
+		"order": 13,
+		"width": 0,
+		"height": 0,
+		"name": "",
+		"label": "Присутствие человека:",
+		"format": "{{msg.payload}}",
+		"layout": "row-spread",
+		"className": "",
+		"x": 1730,
+		"y": 380,
+		"wires": []
+	},
+	{
+		"id": "728b5e985447c468",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Цель ЛОС:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 4,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "2200",
+		"step": "10",
+		"className": "",
+		"x": 330,
+		"y": 860,
+		"wires": [
+			[
+				"a167b9cb32ae7f91"
+			]
+		]
+	},
+	{
+		"id": "67353ac9d2987bd1",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "VOCSetpoint",
+		"payloadType": "flow",
+		"x": 130,
+		"y": 860,
+		"wires": [
+			[
+				"728b5e985447c468"
+			]
+		]
+	},
+	{
+		"id": "a167b9cb32ae7f91",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "VOCSetpoint",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			},
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "setpoint",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 560,
+		"y": 860,
+		"wires": [
+			[
+				"8ddef075c64d1629"
+			]
+		]
+	},
+	{
+		"id": "ecbaee2a93897697",
+		"type": "ui_numeric",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"label": "Цель CO₂:",
+		"tooltip": "",
+		"group": "7c1c7f37.1abdd",
+		"order": 5,
+		"width": 0,
+		"height": 0,
+		"wrap": false,
+		"passthru": true,
+		"topic": "topic",
+		"topicType": "msg",
+		"format": "{{value}}",
+		"min": 0,
+		"max": "2500",
+		"step": "50",
+		"className": "",
+		"x": 330,
+		"y": 900,
+		"wires": [
+			[
+				"619ba8370e14c349"
+			]
+		]
+	},
+	{
+		"id": "a3504256a72d4443",
+		"type": "inject",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"props": [
+			{
+				"p": "payload"
+			},
+			{
+				"p": "topic",
+				"vt": "str"
+			}
+		],
+		"repeat": "",
+		"crontab": "",
+		"once": true,
+		"onceDelay": 0.1,
+		"topic": "",
+		"payload": "CO2Setpoint",
+		"payloadType": "flow",
+		"x": 130,
+		"y": 900,
+		"wires": [
+			[
+				"ecbaee2a93897697"
+			]
+		]
+	},
+	{
+		"id": "619ba8370e14c349",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "CO2Setpoint",
+				"pt": "flow",
+				"to": "payload",
+				"tot": "msg"
+			},
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "setpoint",
+				"tot": "str"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 560,
+		"y": 900,
+		"wires": [
+			[
+				"81449d7c0d3640ec"
+			]
+		]
+	},
+	{
+		"id": "8ddef075c64d1629",
+		"type": "link out",
+		"z": "af6ae872.30e0a8",
+		"name": "VOCSetpoint",
+		"mode": "link",
+		"links": [
+			"f8fe78a999d37242"
+		],
+		"x": 755,
+		"y": 860,
+		"wires": []
+	},
+	{
+		"id": "81449d7c0d3640ec",
+		"type": "link out",
+		"z": "af6ae872.30e0a8",
+		"name": "CO2Setpoint",
+		"mode": "link",
+		"links": [
+			"42279cd5af158043"
+		],
+		"x": 755,
+		"y": 900,
+		"wires": []
+	},
+	{
+		"id": "bf6f966dc0cf157d",
+		"type": "switch",
+		"z": "af6ae872.30e0a8",
+		"name": "<5500",
+		"property": "payload",
+		"propertyType": "msg",
+		"rules": [
+			{
+				"t": "lt",
+				"v": "5500",
+				"vt": "str"
+			}
+		],
+		"checkall": "true",
+		"repair": false,
+		"outputs": 1,
+		"x": 310,
+		"y": 20,
+		"wires": [
+			[
+				"e1f186d7.1fcf18"
+			]
+		]
+	},
+	{
+		"id": "96a3b7333dbf53d0",
+		"type": "comment",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"info": "После загрузки бывают значения VOC = 60000, игнорируем",
+		"x": 150,
+		"y": 20,
+		"wires": []
+	},
+	{
+		"id": "f9ad11fb24e28844",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"rules": [
+			{
+				"t": "set",
+				"p": "topic",
+				"pt": "msg",
+				"to": "Присутствие",
+				"tot": "str"
+			},
+			{
+				"t": "set",
+				"p": "payload",
+				"pt": "msg",
+				"to": "msg.payload ? 100 : 0",
+				"tot": "jsonata"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1200,
+		"y": 340,
+		"wires": [
+			[
+				"d57607a7de9bccbf"
+			]
+		]
+	},
+	{
+		"id": "d57607a7de9bccbf",
+		"type": "trigger",
+		"z": "af6ae872.30e0a8",
+		"name": "",
+		"op1": "",
+		"op2": "0",
+		"op1type": "pay",
+		"op2type": "str",
+		"duration": "-5",
+		"extend": false,
+		"overrideDelay": false,
+		"units": "min",
+		"reset": "",
+		"bytopic": "all",
+		"topic": "topic",
+		"outputs": 1,
+		"x": 1470,
+		"y": 320,
+		"wires": [
+			[
+				"ffb280e.5ae478"
+			]
+		]
+	},
+	{
+		"id": "4647d05f836dd48a",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "VOC",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.VOCDensity",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1350,
+		"y": 40,
+		"wires": [
+			[
+				"7b5b58ff8e627c30"
+			]
+		]
+	},
+	{
+		"id": "30b581dfd65b967d",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "CO2",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.CarbonDioxideLevel",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1350,
+		"y": 120,
+		"wires": [
+			[
+				"7870e1ac7847516a"
+			]
+		]
+	},
+	{
+		"id": "b4a251c2eb22d52a",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "Humidity",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.CurrentRelativeHumidity",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1360,
+		"y": 180,
+		"wires": [
+			[
+				"c5a7304a5e3bb419"
+			]
+		]
+	},
+	{
+		"id": "63317cea4c7b34fe",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "Temperature",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.CurrentTemperature",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1370,
+		"y": 240,
+		"wires": [
+			[
+				"5941d6cb29e0e241"
+			]
+		]
+	},
+	{
+		"id": "580a0cc3c78216d0",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "OccupancyDetected",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.OccupancyDetected",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1400,
+		"y": 280,
+		"wires": [
+			[
+				"c022d37af45bd4f4"
+			]
+		]
+	},
+	{
+		"id": "5941d6cb29e0e241",
+		"type": "homekit-service",
+		"z": "af6ae872.30e0a8",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "Температура 1",
+		"serviceName": "TemperatureSensor",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"CurrentTemperature\":true}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 1620,
+		"y": 240,
+		"wires": [
+			[],
+			[]
+		]
+	},
+	{
+		"id": "c5a7304a5e3bb419",
+		"type": "homekit-service",
+		"z": "af6ae872.30e0a8",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "Влажность 1",
+		"serviceName": "HumiditySensor",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"CurrentRelativeHumidity\":true}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 1620,
+		"y": 180,
+		"wires": [
+			[],
+			[]
+		]
+	},
+	{
+		"id": "c022d37af45bd4f4",
+		"type": "homekit-service",
+		"z": "af6ae872.30e0a8",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "Присутствие 1",
+		"serviceName": "OccupancySensor",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"OccupancyDetected\":true}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 1620,
+		"y": 280,
+		"wires": [
+			[],
+			[]
+		]
+	},
+	{
+		"id": "d5ec16c1b0206d00",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "CO2 Detected",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.CarbonDioxideDetected",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1380,
+		"y": 140,
+		"wires": [
+			[
+				"7870e1ac7847516a"
+			]
+		]
+	},
+	{
+		"id": "7b5b58ff8e627c30",
+		"type": "homekit-service",
+		"z": "af6ae872.30e0a8",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "VOC 1",
+		"serviceName": "AirQualitySensor",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"VOCDensity\":true,\"AirQuality\":true}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 1590,
+		"y": 40,
+		"wires": [
+			[],
+			[]
+		]
+	},
+	{
+		"id": "7870e1ac7847516a",
+		"type": "homekit-service",
+		"z": "af6ae872.30e0a8",
+		"isParent": true,
+		"hostType": "0",
+		"bridge": "51de116c.bb01",
+		"accessoryId": "",
+		"parentService": "",
+		"name": "CO₂ 1",
+		"serviceName": "CarbonDioxideSensor",
+		"topic": "",
+		"filter": false,
+		"manufacturer": "Blizzard Lufttechnik",
+		"model": "1.4.3",
+		"serialNo": "1001",
+		"firmwareRev": "1.4.3",
+		"hardwareRev": "1.4.3",
+		"softwareRev": "1.4.3",
+		"cameraConfigVideoProcessor": "ffmpeg",
+		"cameraConfigSource": "",
+		"cameraConfigStillImageSource": "",
+		"cameraConfigMaxStreams": 2,
+		"cameraConfigMaxWidth": 1280,
+		"cameraConfigMaxHeight": 720,
+		"cameraConfigMaxFPS": 10,
+		"cameraConfigMaxBitrate": 300,
+		"cameraConfigVideoCodec": "libx264",
+		"cameraConfigAudioCodec": "libfdk_aac",
+		"cameraConfigAudio": false,
+		"cameraConfigPacketSize": 1316,
+		"cameraConfigVerticalFlip": false,
+		"cameraConfigHorizontalFlip": false,
+		"cameraConfigMapVideo": "0:0",
+		"cameraConfigMapAudio": "0:1",
+		"cameraConfigVideoFilter": "scale=1280:720",
+		"cameraConfigAdditionalCommandLine": "-tune zerolatency",
+		"cameraConfigDebug": false,
+		"cameraConfigSnapshotOutput": "disabled",
+		"cameraConfigInterfaceName": "",
+		"characteristicProperties": "{\"CarbonDioxideLevel\":true,\"CarbonDioxideDetected\":true}",
+		"waitForSetupMsg": false,
+		"outputs": 2,
+		"x": 1590,
+		"y": 80,
+		"wires": [
+			[],
+			[]
+		]
+	},
+	{
+		"id": "f8e9b4d5777a1583",
+		"type": "change",
+		"z": "af6ae872.30e0a8",
+		"name": "IAQ",
+		"rules": [
+			{
+				"t": "move",
+				"p": "payload",
+				"pt": "msg",
+				"to": "payload.AirQuality",
+				"tot": "msg"
+			}
+		],
+		"action": "",
+		"property": "",
+		"from": "",
+		"to": "",
+		"reg": false,
+		"x": 1350,
+		"y": 80,
+		"wires": [
+			[
+				"7b5b58ff8e627c30"
+			]
+		]
+	}
+]
