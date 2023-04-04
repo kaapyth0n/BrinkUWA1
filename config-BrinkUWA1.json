@@ -1,4 +1,3 @@
-// Configuration options
 {
     "device_type":"BrinkUWA1Test5",
         "device":{
@@ -86,7 +85,7 @@
                   "readonly": true
                 },
                 {
-                  "name": "Preset imbalance, m3/h",
+                  "name": "Preset imbalance, m3h",
                   "id": "PresetImbalance",
                   "type": "value",
                   "reg_type": "holding",
@@ -239,7 +238,7 @@
                   "format": "u16"
                 },
                 {
-                  "name": "Preset imbalance set, m3/h",
+                  "name": "Preset imbalance set, m3h",
                   "id": "PresetImbalanceSet",
                   "type": "value",
                   "reg_type": "holding",
