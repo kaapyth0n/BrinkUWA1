@@ -1,5 +1,6 @@
 {
     "device_type":"BrinkUWA1Test5",
+    "group:"g-custom",
         "device":{
             "name":"Brink UWA1 Test5",
             "id":"BrinkUWA1Test5",
