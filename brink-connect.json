@@ -187,18 +187,6 @@
         "className": ""
     },
     {
-        "id": "80dd053e.f7f4b8",
-        "type": "remote-config",
-        "name": "Blizzard Lufttechnik",
-        "host": "localhost",
-        "protocol": "http",
-        "port": "1880",
-        "baseurl": "/ui",
-        "instancehash": "jikhryawzpn3rouf12o2r37a38qtr7g9uqxp3v6kr3k3mbdt6v8qemwuwkh533si",
-        "server": "nodered02.remote-red.com",
-        "region": "de"
-    },
-    {
         "id": "7c1c7f37.1abdd",
         "type": "ui_group",
         "name": "Комнатный датчик",
@@ -228,7 +216,7 @@
         "allowInsecureRequest": true,
         "manufacturer": "Blizzard Lufttechnik",
         "model": "BlizzConnect",
-        "serialNo": "AF7THKZV",
+        "serialNo": "ASQID3JN",
         "firmwareRev": "1",
         "hardwareRev": "1",
         "softwareRev": "1",
@@ -281,6 +269,18 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "59a9493975be40b5",
+        "type": "remote-config",
+        "name": "Blizzard Lufttechnik",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "xqph3ofyp51a0cgvbe56neypxqcctctxk0sunsscio6ubmwcusyo8w8rehb1vs3l",
+        "server": "nodered02.remote-red.com",
+        "region": "de"
     },
     {
         "id": "b604e1a9.d8cd4",
@@ -1639,23 +1639,10 @@
         "wires": []
     },
     {
-        "id": "48adcbf5.854404",
-        "type": "remote-access",
-        "z": "1d84ff89.725df",
-        "confignode": "80dd053e.f7f4b8",
-        "name": "Remote access UI",
-        "verbose": 0,
-        "x": 120,
-        "y": 2440,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "efbdaf9f.0ed74",
         "type": "remote-notification",
         "z": "1d84ff89.725df",
-        "confignode": "80dd053e.f7f4b8",
+        "confignode": "59a9493975be40b5",
         "name": "Пора почистить фильтр!",
         "notificationTitle": "Blizzard Lufttechnik",
         "notificationTitleType": "str",
@@ -1675,7 +1662,7 @@
         "id": "f1161f16.4d1e6",
         "type": "remote-notification",
         "z": "1d84ff89.725df",
-        "confignode": "80dd053e.f7f4b8",
+        "confignode": "59a9493975be40b5",
         "name": "Ошибка фильтра сброшена!",
         "notificationTitle": "Blizzard Lufttechnik",
         "notificationTitleType": "str",
@@ -4046,6 +4033,19 @@
         ]
     },
     {
+        "id": "803e3d95f85bc6b1",
+        "type": "remote-access",
+        "z": "1d84ff89.725df",
+        "confignode": "59a9493975be40b5",
+        "name": "Remote access UI",
+        "verbose": 0,
+        "x": 110,
+        "y": 2440,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "3c13b6d803706b6f",
         "type": "wirenboard-in",
         "z": "dc2d6985fc528d34",
@@ -5557,8 +5557,8 @@
         "y": 220,
         "wires": [
             [
-                "b71a6380b1b1f432",
-                "95c75dd7878070a3"
+                "95c75dd7878070a3",
+                "82e2787fa52d9ea8"
             ]
         ]
     },
@@ -6493,6 +6493,29 @@
         "x": 1405,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "82e2787fa52d9ea8",
+        "type": "switch",
+        "z": "dc2d6985fc528d34",
+        "name": "is true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 220,
+        "wires": [
+            [
+                "b71a6380b1b1f432"
+            ]
+        ]
     },
     {
         "id": "47222dd.98211d4",
@@ -8004,8 +8027,8 @@
         "y": 220,
         "wires": [
             [
-                "bd455c1919be40c1",
-                "d5ec16c1b0206d00"
+                "d5ec16c1b0206d00",
+                "029eec4d61a75804"
             ]
         ]
     },
@@ -8914,6 +8937,29 @@
         "x": 1405,
         "y": 600,
         "wires": []
+    },
+    {
+        "id": "029eec4d61a75804",
+        "type": "switch",
+        "z": "af6ae872.30e0a8",
+        "name": "is true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 220,
+        "wires": [
+            [
+                "bd455c1919be40c1"
+            ]
+        ]
     },
     {
         "id": "af797ffbd1dc91b5",
@@ -10427,8 +10473,8 @@
         "y": 220,
         "wires": [
             [
-                "56164749fca68528",
-                "a8ce6e7dd4216c86"
+                "a8ce6e7dd4216c86",
+                "946f839b587ef134"
             ]
         ]
     },
@@ -11363,5 +11409,28 @@
         "x": 1405,
         "y": 660,
         "wires": []
+    },
+    {
+        "id": "946f839b587ef134",
+        "type": "switch",
+        "z": "a623431c7850bee0",
+        "name": "is true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 220,
+        "wires": [
+            [
+                "56164749fca68528"
+            ]
+        ]
     }
 ]
